@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            width: fit-content;
+            margin: 50px auto;
+        }
+        
+        button {
+            font-size: 40px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button onclick="getSize()">Submit</button>
+    </div>
+    <script>
+        function getSize() {
+            alert(
+                `Ширина экрана: ${window.screen.width}\nВысота экрана: ${window.screen.height}`
+            );
+        }
+    </script>
+</body>
+</html>

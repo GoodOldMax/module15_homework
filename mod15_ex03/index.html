@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="chat.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat">
+            <form action="javascript:chat.postMessage()">
+                <input class="chat_outline" type="text" name="message" id="" placeholder="Здесь вводится текст сообщения">
+                <button class="chat_outline chat_filled" type="submit">Отправить</button>
+                <button class="chat_outline chat_filled" type="button" onclick="chat.postGeolocation()">Геолокация</button>
+            </form>
+            <div class="chat-history chat_outline"></div>
+        </div>
+    </div>
+</body>
+</html>
